@@ -1,0 +1,31 @@
+{
+  "config":
+  {
+    "gpus": "0",
+    "seed": 123,
+    "train_data_path": "./datasets/IllumHarmonyDataset/train",
+    "display_folder": "./train_stage1_aem_and_rm/display",
+    "epoch_folder": "./train_stage1_aem_and_rm/epoch",
+    "summary": "./train_stage1_aem_and_rm/summary",
+    "data_workers": 8,
+    "data_shuffle": true,
+    "data_batch": 16,
+    "chns_of_albedofeats": 16,
+
+    "training":
+    {
+      "lr_s": 0.0001,
+      "lr_i": 0.0001,
+      "lr_d": 0.0001,
+      "epochs": 30,
+      "display": 200,
+      "display_iter_light_dir": 400,
+      "record_iter": 50,
+      "continue": false,
+      "epoch": 1,
+      "count_train_iter_loss": 1,
+      "record_train_iter_loss": 1,
+      "mode":"train"
+    }
+  }
+}

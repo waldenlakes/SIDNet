@@ -1,0 +1,37 @@
+{
+  "config":
+  {
+    "gpus": "0",
+    "seed": 123,
+    "data_path_train": "./datasets/IllumHarmonyDataset/train",
+    "display_folder": "./train_stage2_biem/display",
+    "epoch_folder": "./train_stage2_biem/epoch",
+    "summary": "./train_stage2_biem/summary",
+    "data_workers": 4,
+    "data_shuffle": 1,
+    "data_batch": 1,
+    "chns_of_shadingbases": 32,
+
+    "stage1_ckpts":
+    {
+      "ckpt_sbm": "./train_stage1_iem_and_sbm/epoch/ckpt_sbm7.pth",
+      "ckpt_iem": "./train_stage1_iem_and_sbm/epoch/ckpt_iem7.pth"
+    },
+
+    "training":
+    {
+      "lr_s": 0.00001,
+      "lr_i": 0.00001,
+      "lr_d": 0.0001,
+      "epochs": 3,
+      "display": 200,
+      "display_iter_light_dir": 400,
+      "record_train_iter_loss": 200,
+      "record_iter": 50,
+      "continue": false,
+      "epoch": 1,
+      "count_train_iter_loss": 1,
+      "mode":"train"
+    }
+  }
+}

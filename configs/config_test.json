@@ -1,0 +1,23 @@
+{
+    "config":
+    {
+      "gpus": "0",
+      "test_data_path": "./datasets/IllumHarmonyDataset/test",
+      "save_dir": "./results",
+      "save_img": true,
+      "val_workers": 2,
+      "val_shuffle": false,
+      "val_batch": 1,
+      "comp_crop": [120, 480],
+      "metrics_imgsize": 512,
+
+      "ckpts":
+      {
+        "ckpt_aem_rm": "./pretrained_models/ckpt_aem_rm.pth",
+        "ckpt_sbm": "./pretrained_models/ckpt_sbm.pth",
+        "ckpt_biem": "./pretrained_models/ckpt_biem.pth",
+        "ckpt_iem": "./pretrained_models/ckpt_iem.pth"
+      }
+    }
+  }
+  
